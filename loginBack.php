@@ -38,6 +38,8 @@ if(mysqli_select_db($link,"register")){
 }else{
     exit();
 }
+$stat=0;
+$statu=0;
 $GLOBALS['z']=11;
 mysqli_query($link,"set name utf8");
 $sql="select * from information ";
@@ -52,13 +54,12 @@ if(!isset($_SESSION['$name'])&empty($_POST["userName"])){
 </form>";
     exit();
 }
+
 if(empty($_GET["nowPage"])){
-      if((empty($_POST['whoname'])&empty($_POST['whopwd']))&(!isset($_SESSION['afdgashyrhjnb/.;'])&!isset($_SESSION['sadfasdgo86.,']))){
+
+      if(!isset($_SESSION['afdgashyrhjnb/.;'])&!isset($_SESSION['sadfasdgo86.,'])){
           $name=empty($_POST["userName"])?die("请输入您的用户名"):$_POST["userName"];
           $password=empty($_POST["mainuserPassword"])?die("输入您的登陆密码"):$_POST["mainuserPassword"];
-      }else if(!(empty($_POST['whoname'])&empty($_POST['whopwd']))){
-          $name= $_POST['whoname'];
-          $password=$_POST['whopwd'];
       }else{
           $name= $_SESSION['afdgashyrhjnb/.;'];
           $password=$_SESSION['sadfasdgo86.,'];
@@ -71,10 +72,7 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
     $admineResult=mysqli_query($link,"select * from admine where userName='{$name}'");
     if($rootResult->num_rows>0){//管理员登陆
         $_SESSION['$name']=2;
-        echo "root";
         //var_dump($rootResult);
-        var_dump($rootResult->num_rows);
-        echo $rootResult->num_rows;
         //var_dump($admineResult);
         echo "<form action='goBack.php' method='post' class='tcdl'>
     <input type='hidden' name='namex' value='$name'>
@@ -87,7 +85,6 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
     }
     elseif($admineResult->num_rows>0){//草鸡管理员登陆
         $_SESSION['$name']=3;
-        echo "cjroot";
         echo "<form action='goBack.php' method='post' class='tcdl'>
     <input type='hidden' name='namex' value='$name'>
     <br />
@@ -152,7 +149,6 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
 </form>";
 }
 if(isset($_SESSION['$name'])& $_SESSION['$name']==2){//管理员
-    echo "j";
     setcookie("user", '$nowpage', time()+3600);
     $sql="select * from photo ";
     $result=mysqli_query($link,$sql);
@@ -207,9 +203,15 @@ if(isset($_SESSION['$name'])& $_SESSION['$name']==2){//管理员
     echo "</tr>";
     echo "</table>";
 }elseif (isset($_SESSION['$name'])& $_SESSION['$name']==3){ //草鸡管理员
-    echo "cj";
+    if(!empty($_POST['changeWho'])){
+        if($_POST['selectStatus']=="管理员"){
+            mysqli_query($link,"update information set status = 2 where userName='{$_POST['changeWho']}'");
+        }else{
+            mysqli_query($link,"update information set status = 1 where userName='{$_POST['changeWho']}'");
+        }
+    }
     setcookie("user", '$nowpage', time()+3600);
-    $sql="select * from photo ";
+    $sql="select * from information";
     $result=mysqli_query($link,$sql);
     $record=mysqli_num_rows($result);//总记录条数
     $pages=ceil($record/$pageSize);//总页数
@@ -227,36 +229,52 @@ if(isset($_SESSION['$name'])& $_SESSION['$name']==2){//管理员
         $starRow=($nowPage-1)*$pageSize;//开始行号
     }
 //构建分页的sql语句
-    $sqlOne="select * from photo LIMIT $starRow,$pageSize";
+    $sqlOne="select * from information";
     $resultOne=mysqli_query($link,$sqlOne);
 //echo $resultOne;
+
     echo "<table border='1' class='table' align='center' cellpadding='2'>";
     echo "<tr>";
     echo "<th>";
     echo "name";
     echo "</th>";
     echo "<th>";
-    echo "image";
+    echo "权限";
     echo "</th>";
     echo "</tr>";
     while($arr=mysqli_fetch_row($resultOne)){
-
         // echo $arr[1];
         echo "<tr>";
         echo "<td>";
         echo $arr[1];
         echo "</td>";
+        if($arr[6]==2){
+           $stat="管理员";
+           $statu="普通用户";
+        }else{
+            $stat ="普通用户";
+            $statu="管理员";
+        }
         echo "<td>";
-        echo "<img src=$arr[2]>";
+        echo "<div class=\"forms\">
+    <form action=\"loginBack.php\" method=\"post\" class=\"excel\" >
+    <input type='hidden' name='whoname' value='$name'>
+    <input type='hidden' name='whopwd' value='$password'>
+    <input type='hidden' name='changeWho' value='$arr[1]'>
+    
+  <select name=\"selectStatus\">
+        <option>$stat</option>
+        <option>$statu</option>
+    </select><br>
+    <input  class=\"in\" type='submit' value='修改用户权限' name=\"submitimag\" ><br>
+</form>
+</div>";
         echo "</td>";
         echo "</tr>";
     }
     echo "<tr>";
     echo "<td colspan='2' align='center'>";
-    echo "分页 ";
-    for($i=1;$i<=$pages;++$i){
-        echo "<a href='loginBack.php?nowPage=$i'>$i   <a>";
-    }
+
 //echo "<a href='dengLuBack.php?nowPage=3'>1<a>";
     echo "</td>";
     echo "</tr>";

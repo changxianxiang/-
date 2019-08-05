@@ -58,5 +58,5 @@ values ('$name','$email','$identify','$school','$password','1')";//存储该用�
         }
     }
 }
-echo "<meta http-equiv=refresh content=\"0;url=index.php\">"
+echo "<meta http-equiv=refresh content=\"0;url=index.php\">";
 ?>

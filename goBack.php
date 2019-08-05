@@ -6,11 +6,12 @@ if($conn->connect_error){
 }else{
     //echo "连接成功";
 }
-echo "<script>
-window.alert(886);
-</script>";
+//echo "<script>
+//window.alert(886);
+//</script>";
 $name=$_POST['namex'];
 unset($_SESSION['afdgashyrhjnb/.;']);
 unset($_SESSION['$name']);
 unset($_SESSION['sadfasdgo86.,']);
+echo "<meta http-equiv=refresh content=\"0;url=index.php\">"
 ?>
