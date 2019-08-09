@@ -13,5 +13,6 @@ $name=$_POST['namex'];
 unset($_SESSION['afdgashyrhjnb/.;']);
 unset($_SESSION['$name']);
 unset($_SESSION['sadfasdgo86.,']);
+
 echo "<meta http-equiv=refresh content=\"0;url=index.php\">"
 ?>

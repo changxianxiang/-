@@ -27,7 +27,7 @@ $sql = "CREATE TABLE photo (
  tmp varchar(110) NOT NULL)";
 mysqli_query($link, $sql);
 mysqli_query($link, "set name utf8");
-
+var_dump($_FILES['file']);
 if ((($_FILES["file"]["type"] == "image/gif")
     || ($_FILES["file"]["type"] == "image/jpeg")
     || ($_FILES["file"]["type"] == "image/pjpeg"))) {

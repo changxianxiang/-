@@ -1,0 +1,54 @@
+.toolbars ul li{
+            list-style: none;
+        }
+        .toolbars ul a{
+            text-decoration: none;
+            color: #666;
+        }
+        .toolbars ul a:hover{
+            color:#969696!important;
+        }
+        /*京东右侧固定图标菜单栏*/
+        .toolbars{
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 6px;
+            background-color: #7a6e6e;
+        }
+        .toolbars ul{
+            position:absolute;
+            top: 40%;
+            right: 0;
+            transform: translate(0,-40%);
+            z-index: 3;
+        }
+        .toolbars ul li{
+            width: 34px;
+            /* height: 35px; */
+            margin-bottom: 30px;
+            font-size:15px; 
+            background-color: #7A6E6E;
+            vertical-align:middle;
+            text-align: center;
+            position: relative;
+        }
+        .toolbars ul .jdvip .toolbars-ico{
+            display: block;
+            width: 34px;
+            /* height: 35px; */
+            color: #fff; 
+            padding-top: 10px;
+            padding-bottom: 10px;  
+            background-color:red;
+        }
+        .toolbars ul .cart .toolbars-ico{
+            display: block;
+            width: 34px;
+            /* height: 35px; */
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;  
+            background-color:blue;
+        }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f7f16dd7-7b1e-4b37-b22d-a3aede640dff" name="fdsa" url="http://local">
+        <fileTransfer port="0" mountedRoot="D:\php2\WWW\chang" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

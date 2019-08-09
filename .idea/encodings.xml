@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/bower_components" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dist" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/header.php" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/photo.php" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/section.php" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/try/dropzone.php" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/try/my-dropzone.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wwxphoto.php" charset="GBK" />
+  </component>
+</project>

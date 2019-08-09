@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3abf0501-08fc-48f7-8c55-ce1bef8b3cb6" name="seds" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\Users\常宪祥\Desktop\try" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

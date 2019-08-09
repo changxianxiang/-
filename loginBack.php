@@ -1,32 +1,6 @@
 <?php
 session_start();//开始session必须放在最上面
-echo "<script src=\"../bower_components/jquery/dist/jquery.min.js\"></script>
-<script src=\"../bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
-  <script type=\"text/javascript\" nonce=\"75c5c8b6c36a4693a5d78593e6b\" src=\"//local.adguard.org?ts=1563927408270&amp;type=content-script&amp;dmn=localhost:63342&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1\"></script>
-<script type=\"text/javascript\" nonce=\"75c5c8b6c36a4693a5d78593e6b\" src=\"//local.adguard.org?ts=1563927408270&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script\"></script><link rel=\"stylesheet\" href=\"../../bower_components/bootstrap/dist/css/bootstrap.min.css\">
-  <!-- Font Awesome -->
-  <link rel=\"stylesheet\" href=\"../../bower_components/font-awesome/css/font-awesome.min.css\">
-  <!-- Ionicons -->
-  <link rel=\"stylesheet\" href=\"../../bower_components/Ionicons/css/ionicons.min.css\">
-  <!-- Theme style -->
-  <link rel=\"stylesheet\" href=\"../../dist/css/AdminLTE.min.css\">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel=\"stylesheet\" href=\"../../dist/css/skins/_all-skins.min.css\">
-  <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>
-  <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic\">
-<script src=\"../../bower_components/jquery/dist/jquery.min.js\"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src=\"../../bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
-<!-- FastClick -->
-<script src=\"../../bower_components/fastclick/lib/fastclick.js\"></script>
-<!-- AdminLTE App -->
-<script src=\"../../dist/js/adminlte.min.js\"></script>
-<!-- AdminLTE for demo purposes -->
-<script src=\"../../dist/js/demo.js\"></script>";
-echo "<body style=\"background-color:lavender\">";
-echo "<link href='css.css'>";
+include_once "head.php";
 $dbHost="localhost";
 $pageSize=2;//一页显示的条数
 $link=mysqli_connect("localhost","root","root");
@@ -47,7 +21,7 @@ $result=mysqli_query($link,"select * from information");
 $xx="xxx";
 $_GET['$xx']=1;
 if(!isset($_SESSION['$name'])&empty($_POST["userName"])){
-    echo "<form action='index.html' method='post' style='color: bisque'class='qdl'>
+    echo "<form action='index.php' method='post' style='color: bisque'class='qdl'>
     <input type='hidden' name='namex' value='$name'>
     <br />
     <input type='submit' name='submit' value='请登录' />
@@ -74,11 +48,12 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
         $_SESSION['$name']=2;
         //var_dump($rootResult);
         //var_dump($admineResult);
-        echo "<form action='goBack.php' method='post' class='tcdl'>
+        echo "<form action='goBack.php' method='post' class='tcdl' id='formid'>
     <input type='hidden' name='namex' value='$name'>
     <br />
     <input type='submit' name='submit' value='退出登录' />
 </form>";
+        $_SESSION['afdgashyrhjnb/;']=2;
         $_SESSION['afdgashyrhjnb/.;']=$name;
         $_SESSION['sadfasdgo86.,']=$password;
         setcookie("$name", "$name");
@@ -90,12 +65,12 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
     <br />
     <input type='submit' name='submit' value='退出登录' />
 </form>";
+        $_SESSION['afdgashyrhjnb/;']=3;
         $_SESSION['afdgashyrhjnb/.;']=$name;
         $_SESSION['sadfasdgo86.,']=$password;
         setcookie("$name", "$name");
     }
     else{//用户登陆
-        echo "adfasdf";
         $sql = "select * from information where userName='{$name}'";
         $arr = mysqli_query($link,"select * from information where userName='{$name}'");
         $row=mysqli_fetch_array($arr,MYSQLI_NUM);//mysql中的值不能直接输出要转化
@@ -107,6 +82,7 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
     <br />
     <input type='submit' name='submit' value='退出登录' />
 </form>";
+                $_SESSION['afdgashyrhjnb/;']=1;
                 $_SESSION['afdgashyrhjnb/.;']=$name;
                 $_SESSION['sadfasdgo86.,']=$password;
 
@@ -128,6 +104,7 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
     <br />
     <input type='submit' name='submit' value='退出登录' />
 </form>";
+            $_SESSION['afdgashyrhjnb/;']=1;
             $_SESSION['afdgashyrhjnb/.;']=$name;
             $_SESSION['sadfasdgo86.,']=$password;
         }
@@ -138,17 +115,19 @@ $userSQL="select * from information where userName='{$name}' and status=1";//普
     <br />
     <input type='submit' name='submit' value='退出登录' />
 </form>";
+    $_SESSION['afdgashyrhjnb/;']=1;
     $_SESSION['afdgashyrhjnb/.;']=$name;
     $_SESSION['sadfasdgo86.,']=$password;
 
 }else{
-    echo "<form action='index.html' method='post' style='color: bisque'class='qdl'>
+    echo "<form action='index.php' method='post' style='color: bisque'class='qdl'>
     <input type='hidden' name='namex' value='$name'>
     <br />
     <input type='submit' name='submit' value='请登录' />
 </form>";
 }
 if(isset($_SESSION['$name'])& $_SESSION['$name']==2){//管理员
+
     setcookie("user", '$nowpage', time()+3600);
     $sql="select * from photo ";
     $result=mysqli_query($link,$sql);
@@ -236,18 +215,12 @@ if(isset($_SESSION['$name'])& $_SESSION['$name']==2){//管理员
     echo "<table border='1' class='table' align='center' cellpadding='2'>";
     echo "<tr>";
     echo "<th>";
-    echo "name";
+    echo "<h1 style='color: #a31515'>权限</h1>";
     echo "</th>";
-    echo "<th>";
-    echo "权限";
-    echo "</th>";
-    echo "</tr>";
     while($arr=mysqli_fetch_row($resultOne)){
         // echo $arr[1];
         echo "<tr>";
-        echo "<td>";
-        echo $arr[1];
-        echo "</td>";
+
         if($arr[6]==2){
            $stat="管理员";
            $statu="普通用户";
@@ -269,6 +242,7 @@ if(isset($_SESSION['$name'])& $_SESSION['$name']==2){//管理员
     <input  class=\"in\" type='submit' value='修改用户权限' name=\"submitimag\" ><br>
 </form>
 </div>";
+        echo "<span style='color: #9A0000'>$arr[1]</span>";
         echo "</td>";
         echo "</tr>";
     }
@@ -316,4 +290,16 @@ else if(isset($_SESSION['$name'])& $_SESSION['$name']==1){//用户
     echo "</table>";
 }
 echo "</body>";
+echo "<!-- jQuery 3 -->
+<script src=\"../bower_components/jquery/dist/jquery.min.js\"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src=\"../bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
+<!-- Slimscroll -->
+<script src=\"../bower_components/jquery-slimscroll/jquery.slimscroll.min.js\"></script>
+<!-- FastClick -->
+<script src=\"../bower_components/fastclick/lib/fastclick.js\"></script>
+<!-- AdminLTE App -->
+<script src=\"../dist/js/adminlte.min.js\"></script>
+<!-- AdminLTE for demo purposes -->
+<script src=\"../dist/js/demo.js\"></script>";
 ?>
