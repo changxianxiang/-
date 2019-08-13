@@ -21,7 +21,15 @@ if (mysqli_select_db($link, "register")) {
     exit();
 }
 //创建图片表
-$sql = "CREATE TABLE photo ( 
+$sql = "CREATE TABLE articals ( 
+ id int(10) unsigned NOT NULL auto_increment primary key, 
+ artical varchar(1000)NOT null,
+ who varchar(100) NOT NULL,
+ title varchar(100) NOT NULL,
+ classion varchar(100) NOT NULL,
+ time varchar(100) NOT NULL,
+ count int(30) NOT NULL)";
+$sql = "CREATE TABLE articals ( 
  id int(10) unsigned NOT NULL auto_increment primary key,  
  who varchar(100) NOT NULL,
  tmp varchar(110) NOT NULL)";

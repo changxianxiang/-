@@ -433,6 +433,8 @@ echo "<!DOCTYPE html>
                         <li class=\"active\"><a href=\"fenshowphoto.php\"><i class=\"fa fa-circle-o\"></i> 分页查看图片</a></li>
                         <li><a href=\"changePower.php\"><i class=\"fa fa-circle-o\"></i> 修改用户权限</a></li>
                         <li><a href=\"try/b.php\"><i class=\"fa fa-circle-o\"></i> 上传图片</a></li>
+                        <li><a href=\"writeArtaicle.php\"><i class=\"fa fa-circle-o\"></i> 写文章</a></li>
+
                     </ul>
                 </li>
                 <li class=\"treeview\">

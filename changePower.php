@@ -1,6 +1,6 @@
 <?php
 session_start();//开始session必须放在最上面
-include_once "head.php";
+require "head.php";
 if($_SESSION['afdgashyrhjnb/;']!=3){
     echo "您无权查看";
     echo "<meta http-equiv=refresh content=\"2;url=index.php\">";
