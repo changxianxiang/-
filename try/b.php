@@ -59,13 +59,11 @@ echo "<!DOCTYPE html>
         }
     });
 </script>
-<form action='photoBack.php' method='post' enctype='multipart/form-data' class='dropzone'>
-    <label for='file'>Filename:</label>
+<form action='photoBack.php' method='post' enctype='multipart/form-data' class='dropzone' type='hidden'>
     <input type='hidden' name='name' value='$name'>
     <input type='hidden' name='nam' value='$password'>
-    <input type='file' name='file' id='file' />
-    <br />
-    <input type='submit' name='submit' value='Submit' />
+   
+    
 </form>
 </body>
 </html>";
