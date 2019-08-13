@@ -7,16 +7,16 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,7 +36,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index2.html" class="logo">
+    <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -68,7 +68,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -139,13 +139,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
@@ -196,7 +196,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -225,8 +225,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
         <li class="treeview active">
@@ -238,14 +238,16 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li class="active"><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+              <li class="active"><a href="fenshowphoto.php"><i class="fa fa-circle-o"></i> 分页查看图片</a></li>
+              <li><a href="changePower.php"><i class="fa fa-circle-o"></i> 修改用户权限</a></li>
+              <li><a href="try/b.php"><i class="fa fa-circle-o"></i> 上传图片</a></li>
+              <li><a href="writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
+              <li><a href="showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li>
+
           </ul>
         </li>
         <li>
-          <a href="../widgets.html">
+          <a href="pages/widgets.html">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
@@ -261,10 +263,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -276,12 +278,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -292,9 +294,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="../forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="../forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -305,12 +307,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="../tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
-          <a href="../calendar.html">
+          <a href="pages/calendar.html">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -319,7 +321,7 @@
           </a>
         </li>
         <li>
-          <a href="../mailbox/mailbox.html">
+          <a href="pages/mailbox/mailbox.html">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
@@ -336,15 +338,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="../examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -400,7 +402,78 @@
         Fixed Layout
         <small>Blank example to the fixed layout</small>
       </h1>
+        <?php
+        session_start();
+        $x=$_GET['id'];
+        if(!$_SESSION['afdgashyrhjnb/;']){
+        echo "您无权查看";
+        echo "<meta http-equiv=refresh content=\"2;url=index.php\">";
+        exit();
+        }
+        $pageSize=10;//一页显示的条数
+        $link=mysqli_connect("localhost","root","root");
+        if(!$link){
+        echo "link failed";
+        exit();
+        }
+        if(mysqli_select_db($link,"register")){
+        }else{
+        exit();
+        }
 
+        setcookie("user", '$nowpage', time()+3600);
+        $sql="select * from articals";
+        $result=mysqli_query($link,$sql);
+        $record=mysqli_num_rows($result);//总记录条数
+        $pages=ceil($record/$pageSize);//总页数
+        if(empty($_GET["nowPage"])){
+        $nowPage=1;//现在的页面
+        $_SESSION["adfdfadsfdhykj"]=1;
+        $starRow=0;//开
+        }else{
+        $nowPage=(int)$_GET["nowPage"];
+        if($nowPage>$pages||$nowPage<1){
+        $nowPage= $_SESSION["adfdfadsfdhykj"];
+        }else{
+        $_SESSION["adfdfadsfdhykj"]=$nowPage;
+        }
+        $starRow=($nowPage-1)*$pageSize;//开始行号
+        }
+        //构建分页的sql语句
+        $sqlOne="select * from articals";
+        $resultOne=mysqli_query($link,$sqlOne);
+        //echo $resultOne;
+        echo "<div class='aaaaa'>";
+            echo "<table border='1' class='table' align='center' cellpadding='2'>";
+                echo "<tr>";
+                    echo "<th style='text-align: center'>";
+                        echo "<h1 style='color: #a31515'>编号</h1>";
+                        echo "</th>";
+                    echo "<th>";
+                        echo "<h1 style='color: #a31515'>文章</h1>";
+                        echo "</th>";
+                    echo "</tr>";
+                while($arr=mysqli_fetch_row($resultOne)){
+                // echo $arr[1];
+                echo "<tr>";
+                    echo "<td style='text-align: center'>";
+                        echo "<span style='color: #a31515'>$arr[0]</span>";
+                        echo "</td>";
+
+                    echo "<td>";
+                        echo "<a href='showarticalsbackstage.php?id=$arr[0]'>$arr[3]<a>";
+                                echo "</td>";
+                    echo "</tr>";
+                }
+                echo "<tr>";
+                    echo "<td colspan='2' align='center'>";
+
+                        //echo "<a href='dengLuBack.php?nowPage=3'>1<a>";
+                                echo "</td>";
+                    echo "</tr>";
+                echo "</table>";
+            echo "</div>";
+        ?>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Layout</a></li>
@@ -631,16 +704,16 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- SlimScroll -->
-<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+<script src="dist/js/demo.js"></script>
 </body>
 </html>
