@@ -538,6 +538,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel=\"stylesheet\" href=\"dist/css/skins/_all-skins.min.css\">
+      <script src=\"jquery-1.10.2.js\"></script>
+
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel=\"stylesheet\" href=\"plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css\">
 
@@ -559,7 +561,7 @@
 </form>
 </div>
 <div class=\"box-body pad\" style=\"float:;\">
-  <form action= 'writeBackstage.php' method= 'post' >
+  <form action= 'writeBackstage.php' method= 'post' id='form1'>
                       题目：<input  class=\"in\" type=\"text\" name=\"title\" style='height: 30px ' autofocus align='center'><br>
                    分类 <select name='classical' style='height: 30px '>
                     <option>学习</option>
@@ -568,10 +570,25 @@
                     </select>
                     <textarea id=\"editor1\" name=\"editor1\" rows=\"10\" cols=\"80\" style=\"visibility: hidden; display: none;\">                                            This is my textarea to be replaced with CKEditor.
                     </textarea>
-                    <input type='submit' style='width: 500px'>
   </form>
-
+<button type=\"button\" class=\"btn btn-block btn-info btn-lg\">提交</button>
 </div>
+<script>
+    $(document).ready(function(){
+        $(\"button\").click(function(){
+            $.ajax({
+                url:\"writeBackstage.php\",
+                async:true,
+                type:\"post\",
+                data: $('#form1').serialize(),
+                success:function(result){
+                    alert(result);
+                }});
+        });
+    });
+</script>
+<h1 align=\"center\">  </h1>
+
 
 <!-- ./wrapper -->
 

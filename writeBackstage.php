@@ -27,7 +27,7 @@ if (mysqli_select_db($link, "register")) {
 $result = mysqli_query($link, "insert into articals(artical,who,title,classion,time,count) 
 values('$article','$name','$title','$classical','$time','$count')");
 if ($result) {
-    echo "图片已存储到数据库";
+    echo "上传成功";
 } else {
     echo $link->error;
     var_dump($result);

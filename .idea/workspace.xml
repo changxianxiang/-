@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9042358-faec-4adc-badd-d5aebe80b268" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/layout/fixed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submmitwrite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changePower.php" beforeDir="false" afterPath="$PROJECT_DIR$/changePower.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fenshowphoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/fenshowphoto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/layout/fixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/layout/fixed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showArticals.php" beforeDir="false" afterPath="$PROJECT_DIR$/showArticals.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showarticalsbackstage.php" beforeDir="false" afterPath="$PROJECT_DIR$/showarticalsbackstage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try/b.php" beforeDir="false" afterPath="$PROJECT_DIR$/try/b.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/writeArtaicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/writeArtaicle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwxphoto.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/修改用户权限.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeBackstage.php" beforeDir="false" afterPath="$PROJECT_DIR$/writeBackstage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/try/b.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="323" column="37" selection-start-line="323" selection-start-column="37" selection-end-line="323" selection-end-column="37" />
+            <state relative-caret-position="76">
+              <caret line="315" column="67" lean-forward="true" selection-start-line="315" selection-start-column="67" selection-end-line="315" selection-end-column="67" />
               <folding>
                 <element signature="e#6#42#0#PHP" expanded="true" />
               </folding>
@@ -58,17 +49,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/try/css.css">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="112" column="83" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="83" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/try/css2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/section.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -148,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeArtaicle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="342" column="98" lean-forward="true" selection-start-line="338" selection-start-column="24" selection-end-line="342" selection-end-column="98" />
+            <state relative-caret-position="1945">
+              <caret line="616" column="9" lean-forward="true" selection-start-line="616" selection-start-column="9" selection-end-line="616" selection-end-column="9" />
               <folding>
                 <element signature="e#6#42#0#PHP" expanded="true" />
               </folding>
@@ -163,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeBackstage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="638">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -180,8 +171,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class=&quot;content</find>
-      <find>div class=&quot;box-foo</find>
       <find>退出登</find>
       <find>a href=&quot;#</find>
       <find>online</find>
@@ -210,6 +199,8 @@
       <find>写</find>
       <find>meta</find>
       <find>treeview-menu</find>
+      <find>jque</find>
+      <find>input</find>
     </findStrings>
     <replaceStrings>
       <replace>/bower_components/ckeditor/plugins/icons.png</replace>
@@ -240,7 +231,6 @@
         <option value="$PROJECT_DIR$/try/photoBack.php" />
         <option value="$PROJECT_DIR$/loginBack.php" />
         <option value="$PROJECT_DIR$/head.html" />
-        <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/backstage.php" />
         <option value="$PROJECT_DIR$/writeArtical.php" />
         <option value="$PROJECT_DIR$/pages/forms/editors.html" />
@@ -250,16 +240,17 @@
         <option value="$PROJECT_DIR$/try/head.php" />
         <option value="$PROJECT_DIR$/subbmitArtical.php" />
         <option value="$PROJECT_DIR$/photoBack.php" />
-        <option value="$PROJECT_DIR$/writeBackstage.php" />
         <option value="$PROJECT_DIR$/pages/layout/fixed.html" />
         <option value="$PROJECT_DIR$/pages/layout/fixed.php" />
         <option value="$PROJECT_DIR$/changePower.php" />
         <option value="$PROJECT_DIR$/fenshowphoto.php" />
         <option value="$PROJECT_DIR$/showarticalsbackstage.php" />
-        <option value="$PROJECT_DIR$/writeArtaicle.php" />
         <option value="$PROJECT_DIR$/submmitwrite.php" />
         <option value="$PROJECT_DIR$/showArticals.php" />
         <option value="$PROJECT_DIR$/try/b.php" />
+        <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/writeBackstage.php" />
+        <option value="$PROJECT_DIR$/writeArtaicle.php" />
       </list>
     </option>
   </component>
@@ -418,12 +409,12 @@
       <workItem from="1565339564169" duration="3888000" />
       <workItem from="1565398032354" duration="2922000" />
       <workItem from="1565578207938" duration="2005000" />
-      <workItem from="1565673601128" duration="17234000" />
+      <workItem from="1565673601128" duration="18168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91700000" />
+    <option name="totallyTimeSpent" value="92634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -534,13 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="112" column="74" selection-start-line="112" selection-start-column="74" selection-end-line="112" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -710,9 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/section.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backstage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -866,23 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeBackstage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writeArtaicle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="342" column="98" lean-forward="true" selection-start-line="338" selection-start-column="24" selection-end-line="342" selection-end-column="98" />
-          <folding>
-            <element signature="e#6#42#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/submmitwrite.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -920,8 +884,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/try/b.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="323" column="37" selection-start-line="323" selection-start-column="37" selection-end-line="323" selection-end-column="37" />
+        <state relative-caret-position="76">
+          <caret line="315" column="67" lean-forward="true" selection-start-line="315" selection-start-column="67" selection-end-line="315" selection-end-column="67" />
+          <folding>
+            <element signature="e#6#42#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/section.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="112" column="83" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeBackstage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeArtaicle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1945">
+          <caret line="616" column="9" lean-forward="true" selection-start-line="616" selection-start-column="9" selection-end-line="616" selection-end-column="9" />
           <folding>
             <element signature="e#6#42#0#PHP" expanded="true" />
           </folding>
