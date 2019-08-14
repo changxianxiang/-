@@ -69,6 +69,13 @@
 //echo "</tr>";
 //echo "</table>";
 //?>
+<?php
+session_start();
+if(!isset($_SESSION['afdgashyrhjnb/.;'])){
+    echo "<meta http-equiv=refresh content=\"0;url=index.php\">";
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -312,18 +319,15 @@
                         <li class="active"><a href="fenshowphoto.php"><i class="fa fa-circle-o"></i> 分页查看图片</a></li>
                         <li><a href="changePower.php"><i class="fa fa-circle-o"></i> 修改用户权限</a></li>
                         <li><a href="try/b.php"><i class="fa fa-circle-o"></i> 上传图片</a></li>
-                        <li><a href="writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
-                        <li><a href="showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li>
 
                     </ul>
                 </li>
                 <li>
-                    <a href="pages/widgets.html">
-                        <i class="fa fa-th"></i> <span>Widgets</span>
-                        <span class="pull-right-container">
+                    <i class="fa fa-th"></i> <span><li><a href="writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
+                <li><a href="showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li></span>
+                <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
-                    </a>
                 </li>
                 <li class="treeview">
                     <a href="#">
@@ -480,7 +484,6 @@
                 echo "<meta http-equiv=refresh content=\"2;url=index.php\">";
                 exit();
             }
-            include_once "head.php";
             $pageSize=6;//一页显示的条数
             $link=mysqli_connect("localhost","root","root");
             if(!$link){

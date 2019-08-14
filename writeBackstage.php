@@ -1,3 +1,4 @@
+
 <?php
 session_start();//开始session必须放在最上面
 $article=$_POST['editor1'];

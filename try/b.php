@@ -68,15 +68,13 @@
 //</body>
 //</html>";
 //?>
-
-
-
-
-
-
-
-
-
+<?php
+session_start();
+if(!isset($_SESSION['afdgashyrhjnb/.;'])){
+    echo "<meta http-equiv=refresh content=\"0;url=../index.php\">";
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -320,17 +318,15 @@
                         <li class="active"><a href="../fenshowphoto.php"><i class="fa fa-circle-o"></i> 分页查看图片</a></li>
                         <li><a href="../changePower.php"><i class="fa fa-circle-o"></i> 修改用户权限</a></li>
                         <li><a href="../try/b.php"><i class="fa fa-circle-o"></i> 上传图片</a></li>
-                        <li><a href="../writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
-                        <li><a href="../showArticals.php"><i class="f-circle-o"></i>看文章</a></li>
+
                     </ul>
                 </li>
                 <li>
-                    <a href="../pages/widgets.html">
-                        <i class="fa fa-th"></i> <span>Widgets</span>
-                        <span class="pull-right-container">
+                    <i class="fa fa-th"></i> <span><li><a href="../writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
+                <li><a href="../showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li></span>
+                <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
-                    </a>
                 </li>
                 <li class="treeview">
                     <a href="#">
@@ -482,7 +478,6 @@
             </h1>
             <?php
             session_start();//开始session必须放在最上面
-            include_once "head.php";
             $name= $_SESSION['afdgashyrhjnb/.;'];
             $password=$_SESSION['sadfasdgo86.,'];
             echo "<!DOCTYPE html>

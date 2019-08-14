@@ -79,7 +79,13 @@
 
 
 
-
+<?php
+session_start();
+if(!isset($_SESSION['afdgashyrhjnb/.;'])){
+    echo "<meta http-equiv=refresh content=\"0;url=index.php\">";
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -283,7 +289,11 @@
                 </div>
                 <div class="pull-left info">
                     <p>Alexander Pierce</p>
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    <form action='goBack.php' method='post' class='tcdl' id='formid'>
+                        <input type='hidden' name='namex' value='$name'>
+                        <br />
+                        <input type='submit' style="color: #0b58a2" name='submit' value='退出登录' />
+                    </form>
                 </div>
             </div>
             <!-- search form -->
@@ -324,17 +334,14 @@
                         <li class="active"><a href="fenshowphoto.php"><i class="fa fa-circle-o"></i> 分页查看图片</a></li>
                         <li><a href="changePower.php"><i class="fa fa-circle-o"></i> 修改用户权限</a></li>
                         <li><a href="try/b.php"><i class="fa fa-circle-o"></i> 上传图片</a></li>
-                        <li><a href="writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
-                        <li><a href="showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="pages/widgets.html">
-                        <i class="fa fa-th"></i> <span>Widgets</span>
-                        <span class="pull-right-container">
+                    <i class="fa fa-th"></i> <span><li><a href="writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
+                <li><a href="showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li></span>
+                <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
-                    </a>
                 </li>
                 <li class="treeview">
                     <a href="#">
@@ -486,7 +493,6 @@
             </h1>
             <?php
             session_start();//开始session必须放在最上面
-            require "head.php";
             $x=$_GET['id'];
 //            if(!$_SESSION['afdgashyrhjnb/;']){
 //                echo "您无权查看";

@@ -88,7 +88,13 @@
 
 
 
-
+<?php
+session_start();
+if(!isset($_SESSION['afdgashyrhjnb/.;'])){
+    echo "<meta http-equiv=refresh content=\"0;url=index.php\">";
+    exit();
+}
+?>
 
 
 
@@ -298,7 +304,11 @@
                 </div>
                 <div class="pull-left info">
                     <p>Alexander Pierce</p>
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    <form action='goBack.php' method='post' class='tcdl' id='formid'>
+                        <input type='hidden' name='namex' value='$name'>
+                        <br />
+                        <input type='submit' style="color: #0b58a2" name='submit' value='退出登录' />
+                    </form>
                 </div>
             </div>
             <!-- search form -->
@@ -339,18 +349,16 @@
                         <li class="active"><a href="fenshowphoto.php"><i class="fa fa-circle-o"></i> 分页查看图片</a></li>
                         <li><a href="changePower.php"><i class="fa fa-circle-o"></i> 修改用户权限</a></li>
                         <li><a href="try/b.php"><i class="fa fa-circle-o"></i> 上传图片</a></li>
-                        <li><a href="writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
-                        <li><a href="showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li>
+
 
                     </ul>
                 </li>
                 <li>
-                    <a href="pages/widgets.html">
-                        <i class="fa fa-th"></i> <span>Widgets</span>
-                        <span class="pull-right-container">
+                    <i class="fa fa-th"></i> <span><li><a href="writeArtaicle.php"><i class="fa fa-circle-o"></i> 写文章</a></li>
+                <li><a href="showArticals.php"><i class="fa fa-circle-o"></i> 看文章</a></li></span>
+                <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
-                    </a>
                 </li>
                 <li class="treeview">
                     <a href="#">
@@ -561,21 +569,49 @@
 </form>
 </div>
 <div class=\"box-body pad\" style=\"float:;\">
-  <form action= 'writeBackstage.php' method= 'post' id='form1'>
+  <form  method= 'post' id='form1' >
                       题目：<input  class=\"in\" type=\"text\" name=\"title\" style='height: 30px ' autofocus align='center'><br>
                    分类 <select name='classical' style='height: 30px '>
                     <option>学习</option>
                     <option>娱乐</option>
                     <option>科技</option>
                     </select>
-                    <textarea id=\"editor1\" name=\"editor1\" rows=\"10\" cols=\"80\" style=\"visibility: hidden; display: none;\">                                            This is my textarea to be replaced with CKEditor.
-                    </textarea>
+                       <script src=\"bower_components/ckeditor/ckeditor.js\"></script>
+<!--    <script type=\"text/javascript\" src=\"ckeditor/ckeditor.js\"></script></head><body>-->
+
+<form method=\"post\" id='form1' action=\"writeBackstage.php\">
+
+    <p>
+
+        My Editor:<br />
+
+        <textarea id=\"editor1\" name=\"editor1\">&lt;p&gt;Initial value.&lt;/p&gt;</textarea>
+
+        <script type=\"text/javascript\">
+            
+            
+            CKEDITOR.replace( 'editor1' );   
+            </script>
+
+    </p>
+
+    <p>
+
+        <input type=\"submit\"class=\"btn btn-block btn-info btn-lg\"id='subbmit1' />
+
+    </p>
+
+</form>
   </form>
-<button type=\"button\" class=\"btn btn-block btn-info btn-lg\">提交</button>
-</div>
+
 <script>
     $(document).ready(function(){
-        $(\"button\").click(function(){
+        
+        $(\"#subbmit1\").click(function(){//查找id为subbmit1的元素
+        for (instance in CKEDITOR.instances){
+	        CKEDITOR.instances[instance].updateElement();
+	    }
+
             $.ajax({
                 url:\"writeBackstage.php\",
                 async:true,
@@ -584,7 +620,7 @@
                 success:function(result){
                     alert(result);
                 }});
-        });
+       });
     });
 </script>
 <h1 align=\"center\">  </h1>
@@ -606,15 +642,7 @@
 <script src=\"bower_components/ckeditor/ckeditor.js\"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src=\"plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js\"></script>
-<script>
-  $(function () {
-    // Replace the <textarea id=\"editor1\"> with a CKEditor
-    // instance, using default configuration.
-    CKEDITOR.replace('editor1')
-    //bootstrap WYSIHTML5 - text editor
-    $('.textarea').wysihtml5()
-  })
-</script>
+
 </body>
 </html>";
 
